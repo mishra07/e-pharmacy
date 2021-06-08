@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Azonix;
+    src: url("Azonix.otf") format("opentype");
+}
+@font-face{
+    font-family: Grave;
+    src: url("Grave.ttf") format("truetype");
+}
+
+.container{
+    height: 96%;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#text{
+    margin-top: 20%;
+    font-family: Grave;
+    font-size: 70px;
+    color: #4169E1	
+}
+
+#backSVG{
+    position: relative;
+    opacity: 0.4;
+    z-index: -3;
+}
+
+#col1{
+    margin: 0;
+}
+#col2{
+    /* background-color: burlywood; */
+    background-image: url('https://simplyexplainer.com/wp-content/uploads/2019/12/health-care-01.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#col3{
+    background-color: blueviolet;
+}
+
+.anim{
+    display: block;
+}
+.anim .path {
+    stroke-dasharray: 4383;
+    stroke-dashoffset: 4383;
+    animation: dash 4s linear normal forwards;
+}
+@keyframes dash{
+    from {
+        stroke-dashoffset: 4383;
+   }
+    to {
+        stroke-dashoffset: 0;
+   }
+}
+
+#animation{
+    transform: scale(0.8);
+    animation-delay: 2s;
+    z-index: 3;
+}
+
+#heading{
+    font-size: 75px;
+    font-family: 'Grave';
+}
+
+#tagline{
+    font-size: 25px;
+    font-weight: 500;
+}
+#rr1{
+    height: 100%;
+    width: 100%;
+}
+#rr2{
+    height: 60%;
+}
+
+#carouselExampleControls img{
+    height: 100%;
+    width: 50%;
+}
+
+#logo{
+    margin-left: 5%;
+    font-size: 30px;
+    font-family: Azonix;
+}
+.item{
+    font-size: 20px;
+    font-weight: 600;
+}
+#it1{
+    color:#4169E1;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #4169E1 !important;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.btn-outline-primary, .btn-outline-primary:hover, .btn-outline-primary:active, .btn-outline-primary:visited {
+    background-color: #4169E1 !important;
+    border-radius: 10px;
+    margin-top: 5px;
+    color:white;
+}
+
+.navbar-custom{
+    background-color:white;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: black;
+}
+.navbar-custom .navbar-nav .nav-link {
+    color: black;
+}
+.desc p{
+    background-color: #4169E1;
+    color:white;
+    padding: 2%;
+    border-radius: 30px 0px;
+}
+#facebook,#twitter{
+    height: 60px;
+    width: 50px;
+}
+#instagram,#youtube{
+    height: 40px;
+    width: 40px;
+}
+#copyright{
+    width: 70px;
+    height: 50px;
+}
+.bottomNav{
+    height: 40%;
+    width: 60%;
+    margin: 10% auto;
+}
+.bottomNav img{
+    margin: 20px 20px;
+}
+.images, .copyr{
+    width: 60%;
+    height: 30%;
+    margin: auto;
+    padding: auto;
+}
+.credits{
+    width: 60%;
+    height: 30%;
+    margin: auto;
+    padding: 0 10%
+}
